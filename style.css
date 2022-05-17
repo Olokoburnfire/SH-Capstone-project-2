@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     background-color: floralwhite;
     background-size: cover;
@@ -23,7 +26,36 @@ body {
     font-weight: 400;
 }
 
+
+
 .btn-primary {
     color: #fff;
     background-color: limegreen !important;
+}
+.hidden {
+    display: none;
+}
+
+.icon {    
+    width: 24px;
+    height: 24px;
+    
+    top: 32px;
+    right: 5px;
+    pointer-events: none;
+    z-index: 2; 
+    
+}
+
+.icon .icon-succcess {
+    fill: green;
+}
+
+.icon .icon-error {
+    background-color: red;
+}
+
+.error-message {
+    font-size: .85rem;
+    color: red;
 }
