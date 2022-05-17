@@ -134,6 +134,12 @@ nav li a:hover {
 }
 
 @media only screen and (max-width: 768px) {
+    header img {
+    max-width: 20%;
+    max-height: auto;
+    margin-top: 20px;
+    margin-left: 0px;
+}
     .nav-menu {
         position: fixed;
         left: -100%;
