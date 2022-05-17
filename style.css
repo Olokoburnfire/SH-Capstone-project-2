@@ -135,7 +135,7 @@ nav li a:hover {
 
 @media only screen and (max-width: 768px) {
     header img {
-    max-width: 20%;
+    max-width: 30%;
     max-height: auto;
     margin-top: 20px;
     margin-left: 0px;
