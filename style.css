@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 * {
     box-sizing: border-box;
@@ -166,4 +167,114 @@ nav li a:hover {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+}
+=======AbdulKabir
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: floralwhite;    
+    background-size: cover;
+}
+
+header{
+    height: 72px;
+    margin: -20px 0 -20px -20px; 
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: floralwhite;;
+}
+
+header img{
+    margin-top: 20px;
+    margin-left: 0px;
+}
+ 
+nav ul{
+    list-style: none;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+nav li{
+    min-width: none;
+    float: right;
+    margin-top: 20px;
+    margin-right: .5em;
+    margin-left: 10px;
+    text-align: center;
+}
+
+nav li a:link,
+nav li a:visited{
+    display: block;
+    padding: .2em;
+    color: #000;
+    text-decoration: none;
+    font-weight: 300;
+    margin: 0 0 0.2em 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+nav li a:hover{
+    text-decoration: underline;
+}
+
+.container {
+    max-height: 100vh;
+}
+
+#ui {
+    padding: 2.5rem;
+    margin-top: 3rem;
+}
+
+#ui h1 {
+    color: #000;
+    font-weight: 700;
+}
+
+#ui label {
+    color: #000;
+    font-weight: 400;
+    display: block;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: limegreen !important;
+}
+.hidden {
+    display: none;
+}
+
+.icon {     
+    
+    width: 24px;
+    height: 24px;    
+    top: 32px;
+    right: 5px;
+    pointer-events: none;
+    z-index: 2;  
+    
+}
+
+#icon-success {
+    fill: green;
+}
+
+#icon-error {
+    fill: red;
+}
+
+.error-message {
+    font-size: .85rem;
+    color: red;
+}
+#group {
+    display: grid;
 }
