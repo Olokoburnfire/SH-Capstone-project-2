@@ -52,6 +52,16 @@ class FormValidator{
             }
         }
 
+        // Check for a valid phone number
+        if (field.type === "tel") {
+            const re = /^\d{3}-?\d{2}-?\d{3}-?\d{3}$/
+            if (re.test(field.value)) {
+                this.setStatus(field, null, "success")
+            } else {
+                this.setStatus(field, "Please enter a valid phone number", "error")
+            }
+        }
+
         // Password confirmation edge case
         if (field.id === "password_confirmation") {
             const passwordField = this.form.querySelector('#password')

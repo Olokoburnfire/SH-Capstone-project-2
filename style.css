@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: floralwhite;
+    background-color: floralwhite;    
     background-size: cover;
 }
 
@@ -58,7 +58,6 @@ nav li a:hover{
 }
 
 #ui {
-    background-color: transparent;
     padding: 2.5rem;
     margin-top: 3rem;
 }
@@ -71,9 +70,8 @@ nav li a:hover{
 #ui label {
     color: #000;
     font-weight: 400;
+    display: block;
 }
-
-
 
 .btn-primary {
     color: #fff;
@@ -83,26 +81,29 @@ nav li a:hover{
     display: none;
 }
 
-.icon {    
-    width: 24px;
-    height: 24px;
+.icon {     
     
+    width: 24px;
+    height: 24px;    
     top: 32px;
     right: 5px;
     pointer-events: none;
-    z-index: 2; 
+    z-index: 2;  
     
 }
 
-.icon .icon-succcess {
+#icon-success {
     fill: green;
 }
 
-.icon .icon-error {
-    background-color: red;
+#icon-error {
+    fill: red;
 }
 
 .error-message {
     font-size: .85rem;
     color: red;
+}
+#group {
+    display: grid;
 }
