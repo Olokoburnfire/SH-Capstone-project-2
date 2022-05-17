@@ -1,6 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: floralwhite;
     background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height: 72px;
+    margin: -20px 0 -20px -20px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    ;
+}
+
+header img {
+    max-width: 10%;
+    max-height: auto;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+nav ul {
+    list-style: none;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+nav li {
+    min-width: none;
+    float: right;
+    margin-top: 20px;
+    margin-right: .5em;
+    margin-left: 10px;
+    text-align: center;
+}
+
+nav li a:link,
+nav li a:visited {
+    display: block;
+    padding: .2em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: limegreen;
+    border-style: solid;
+    border-width: 2px;
+    border-color: limegreen;
+    margin: 0 0 0.2em 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+    color: floralwhite;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: limegreen;
 }
 
 .container {
@@ -8,7 +83,6 @@ body {
 }
 
 #ui {
-    background-color: transparent;
     padding: 2.5rem;
     margin-top: 3rem;
 }
@@ -21,9 +95,75 @@ body {
 #ui label {
     color: #000;
     font-weight: 400;
+    display: block;
 }
 
 .btn-primary {
     color: #fff;
     background-color: limegreen !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    top: 32px;
+    right: 5px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+#icon-success {
+    fill: green;
+}
+
+#icon-error {
+    fill: red;
+}
+
+.error-message {
+    font-size: .85rem;
+    color: red;
+}
+
+#group {
+    display: grid;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+    .hamburger {
+        display: inline-block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }

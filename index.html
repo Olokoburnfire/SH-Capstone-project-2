@@ -17,13 +17,19 @@
 
 <body>
     <header>
-        <img src="side hustle logo.png" alt="site logo">
+        <img src="side hustle logo.jfif" alt="site logo">
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact Us</a></li>
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a target="_blank" href="https://internship.sidehustle.ng/">Contact Us</a></li>
+                <li class="nav-item"><a href="#About">About</a></li>
+                <li class="nav-item"><a href="#Home">Home</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
 
@@ -34,47 +40,102 @@
             <div class="col-lg-6">
                 <div id="ui">
                     <h1 class="text-center">Sign Up</h1>
-                    <form class="form-group">
+                    <form class="form">
+                        <div>
+                            <label for="username"> Username</label>
 
-                        <label for="username"> Username</label>
-                        <input type="text" name="username" class="form-control" placeholder="Enter your Username">
+                            <input id="username" type="text" name="username" class="form-control" placeholder="Enter your Username">
+                            <span class="error-message"></span>
+                            <div id="group">
+                                <svg class="icon icon-success hidden" id="icon-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+
+                                <svg class="icon icon-error hidden" id="icon-error" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                              <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                            </svg> </div>
+                        </div>
+                        <br>
+
+                        <div>
+                            <label for="Email">E-mail address</label>
+                            <input id="email" type="email" name="email" class="form-control" placeholder="Enter your email address">
+                            <span class="error-message"></span>
+                            <svg class="icon icon-success hidden" id="icon-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+
+                            <svg class="icon icon-error hidden" id="icon-error" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <br>
+
+                        <div>
+                            <label for="Phone-number">Phone number</label>
+                            <input id="phone_no" type="tel" name="phone-number" class="form-control" placeholder="123 456 7890">
+                            <span class="error-message"></span>
+
+                            <svg class="icon icon-success hidden" id="icon-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+
+                            <svg class="icon icon-error hidden" id="icon-error" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
 
                         <br>
-                        <label for="Email">E-mail address</label>
-                        <input type="email" name="email" class="form-control" placeholder="Enter your email address">
+                        <div>
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender" class="form-control">
+                                <option value="Choose Gender">Choose Gender..</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="others">Others</option>
+                            </select>
+                            <span class="error-message"></span>
+                            <svg class="icon icon-success hidden" id="icon-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
 
-                        <br>
-                        <label for="Phone-number">Phone number</label>
-
-                        <br>
-                        <input type="tel" name="phone-number" class="form-control" placeholder="Enter your Phone number">
-
+                            <svg class="icon icon-error hidden" id="icon-error" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
 
                         <br>
                         <div class="row">
                             <div class="col-lg-6">
                                 <label for="password"> Password</label>
-                                <input type="password" name="password" class="form-control" placeholder="Enter Password">
+                                <input id="password" type="password" name="password" class="form-control" placeholder="Enter Password">
+                                <span class="error-message"></span>
+                                <svg class="icon icon-success hidden" id="icon-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+
+                                <svg class="icon icon-error hidden" id="icon-error" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                                </svg>
                             </div>
 
                             <div class="col-lg-6">
                                 <label for="confirmation"> Confirm Password</label>
-                                <input type="password" name="Password" class="form-control" placeholder="Confirm Password">
+                                <input id="password_confirmation" type="password" name="Password" class="form-control" placeholder="Confirm Password">
+                                <span class="error-message"></span>
+                                <svg class="icon icon-success hidden" id="icon-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+
+                                <svg class="icon icon-error hidden" id="icon-error" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                                </svg>
                             </div>
 
                         </div>
 
                         <br>
-                        <select name="gender" class="form-control">
-                            <option value="Choose Gender">Choose Gender..</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                            <option value="others">Others</option>
-                        </select>
-
-
-                        <br>
-                        <input type="submit" value="submit" name="submit" class="btn btn-primary btn-group-lg btn-lg" style="width:100%;">
+                        <input type="submit" value="Submit" name="submit" class="btn btn-primary btn-group-lg btn-lg" style="width:100%;">
 
                     </form>
                 </div>
@@ -84,6 +145,8 @@
 
         </div>
     </div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
+
 
 </html>
