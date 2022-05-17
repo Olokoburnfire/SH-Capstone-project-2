@@ -1,0 +1,29 @@
+body {
+    background-color: floralwhite;
+    background-size: cover;
+}
+
+.container {
+    max-height: 100vh;
+}
+
+#ui {
+    background-color: transparent;
+    padding: 2.5rem;
+    margin-top: 3rem;
+}
+
+#ui h1 {
+    color: #000;
+    font-weight: 700;
+}
+
+#ui label {
+    color: #000;
+    font-weight: 400;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: limegreen !important;
+}
