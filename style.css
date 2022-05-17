@@ -6,6 +6,53 @@ body {
     background-size: cover;
 }
 
+header{
+    height: 72px;
+    margin: -20px 0 -20px -20px; 
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: floralwhite;;
+}
+
+header img{
+    margin-top: 20px;
+    margin-left: 0px;
+}
+ 
+nav ul{
+    list-style: none;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+nav li{
+    min-width: none;
+    float: right;
+    margin-top: 20px;
+    margin-right: .5em;
+    margin-left: 10px;
+    text-align: center;
+}
+
+nav li a:link,
+nav li a:visited{
+    display: block;
+    padding: .2em;
+    color: #000;
+    text-decoration: none;
+    font-weight: 300;
+    margin: 0 0 0.2em 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+nav li a:hover{
+    text-decoration: underline;
+}
+
 .container {
     max-height: 100vh;
 }
