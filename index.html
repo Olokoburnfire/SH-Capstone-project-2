@@ -17,13 +17,19 @@
 
 <body>
     <header>
-        <img src="side hustle logo.png" alt="site logo">
+        <img src="side hustle logo.jfif" alt="site logo">
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact Us</a></li>
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a target="_blank" href="https://internship.sidehustle.ng/">Contact Us</a></li>
+                <li class="nav-item"><a href="#About">About</a></li>
+                <li class="nav-item"><a href="#Home">Home</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
 
@@ -37,6 +43,25 @@
                     <form class="form">
                         <div>
                             <label for="username"> Username</label>
+
+
+                            <input id="username" type="text" name="username" class="form-control" placeholder="Enter your Username">
+                            <span class="error-message"></span>
+                            <div id="group">
+                                <svg class="icon icon-success hidden" id="icon-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+
+                                <svg class="icon icon-error hidden" id="icon-error" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                              <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                            </svg> </div>
+                        </div>
+                        <br>
+
+                        <div>
+                            <label for="Email">E-mail address</label>
+                            <input id="email" type="email" name="email" class="form-control" placeholder="Enter your email address">
+                            <span class="error-message"></span>
                             
                             <input id="username" type="text" name="username" class="form-control" placeholder="Enter your Username">
                             <span class="error-message"></span>
@@ -70,6 +95,23 @@
                             <input id="phone_no" type="tel" name="phone-number" class="form-control" placeholder="123 456 7890">
                             <span class="error-message"></span>
                             
+
+                            <svg class="icon icon-success hidden" id="icon-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+
+                            <svg class="icon icon-error hidden" id="icon-error" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <label for="Phone-number">Phone number</label>
+                            <input id="phone_no" type="tel" name="phone-number" class="form-control" placeholder="123 456 7890">
+                            <span class="error-message"></span>
+
                             <svg class="icon icon-success hidden" id="icon-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                             </svg>
